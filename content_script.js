@@ -24,6 +24,4 @@ var productInfo = {
   "source_url": location.href
 };
 
-alert(JSON.stringify(productInfo));
-
-//chrome.runtime.connect().postMessage(additionalInfo);
+chrome.runtime.connect().postMessage(productInfo);

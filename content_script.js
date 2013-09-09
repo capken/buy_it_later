@@ -28,11 +28,11 @@ function productPrice() {
 
 function productImage() {
   var candidateIds = ["main-image", "prodImage"];
-  var imageSrc = "";
-  for(id in candidateIds) {
-    imageSrc = attributeOf(id, "src");
-    if(imageSrc != "") {
-      return imageSrc;
+  for(var i = 0; i < candidateIds.length; i++) {
+    var id = candidateIds[i];
+    var imageSource = attributeOf(id, "src");
+    if(imageSource != "") {
+      return imageSource;
     }
   }
 
